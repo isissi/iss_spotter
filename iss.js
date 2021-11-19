@@ -18,10 +18,10 @@ const fetchMyIP = function(callback) {
   });
 };
 
-const fetchCoordsByIP = function (ip, callback) {
+const fetchCoordsByIP = function(ip, callback) {
   request(
     "https://api.freegeoip.app/json/?apikey=db333400-48f0-11ec-af67-e7b1abfbdab5",
-    (error, response, body) => ){
+    (error, response, body) => {
       if (error) {
         return callback(error, null);
       }
